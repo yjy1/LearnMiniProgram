@@ -1,66 +1,48 @@
-// pages/home/home.js
-Page({
+ Page({
+   data: {
+     name: "coderycj",
+     age: 26,
+     students: [{
+         id: 10,
+         name: 'kobe',
+         age: 30
+       },
+       {
+         id: 11,
+         name: 'kobe1',
+         age: 31
+       },
+       {
+         id: 12,
+         name: 'kobe2',
+         age: 32
+       },
+       {
+         id: 13,
+         name: 'kobe3',
+         age: 33
+       },
+       {
+         id: 14,
+         name: 'kobe4',
+         age: 34
+       },
+     ],
+     counter: 0
+   },
+   handleBtnClick() {
+     //  1.错误做法，界面不会发生刷新
+     //  this.data.couter++
+     //  console.log(this.data.couter)
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
-})
+     // 2.this.setData()
+     this.setData({
+       counter: this.data.counter + 1
+     })
+   },
+   handleSubtraction(){
+     this.setData({
+       counter:this.data.counter -1
+     })
+   }
+ })
