@@ -1,0 +1,21 @@
+/* pages/view/view.wxss */
+.box{
+  background: crimson;
+}
+.box1{
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+}
+.hc{
+  background-color: crimson;
+  font-size: 19px;
+}
+.box2{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(225, 70, 65);
+}
+.box2-hover{
+  background-color: royalblue;
+}
