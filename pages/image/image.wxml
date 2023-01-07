@@ -1,0 +1,32 @@
+ <!-- 1.image的基本使用 -->
+ <!-- 
+   重点：
+    1.image组件可以写成单标签，也可以写成双标签
+    2.有默认大小
+    3.行内块级元素
+  -->
+  <text>哈哈哈</text>
+  <!-- <image src="" mode=""/> -->
+
+  <!-- 2.src:可以是本地地址/远程地址 -->
+  <image src="/assest/test/mo.jpg" mode=""/>
+  <!-- <image src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/GEWVeJPFkSEz7tgvlaTtv2MYO01RZr0yGTOLW6EDex3HdiciaQ5VX14BsLRIvc4SRgy44QoNToiasWT54pNAaj0ibw/0?wx_fmt=jpeg" mode=""/> -->
+
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode=""/>
+
+  <!-- 补充：相册中的图片 -->
+  <button bindtap="handleChoseAlbum">选中图片</button>
+  <image src="{{imagePath}}" mode=""/>
+
+  <view>=================================</view>
+  <!-- 3.bindload:监听图片加载完成 -->
+  <image wx:for="{{1}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" alt=""
+  bindload="handleImageLoad"
+  lazy-load="{{true}}"
+  />
+
+  <!-- 4.长按图片出现识别二维码 -->
+  <image src="https://img1.baidu.com/it/u=666927474,3753237121&fm=253&app=138&size=w931&n=0&f=GIF&fmt=auto?sec=1673197200&t=9e9e6191a1123d9cf4fc5f99c88a47d1" 
+  mode=""
+  show-menu-by-longpress="{{true}}"
+  />
