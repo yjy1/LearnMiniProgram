@@ -1,33 +1,55 @@
-App({
-  //生命周期函数,后台存活2个小时
-  //小程序初始化完成时会执行的声明周期函数
-  onLaunch(){
-    console.log('小程序初始化完成了')
-    // wx.request({
-    //   url: 'url',
-    // })
-    // 异步调用
-    wx.getUserInfo({
-      success:function(res){
-        console.log('getUserInfo==',res)
-      }
+// 注册小程序示例
+App({ //全局共享的单例对象
+
+  /**
+   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
+   */
+  onLaunch: function (options) {
+    console.log('onLaunch===', options)
+
+    //发送网络请求
+
+    //获取用户信息
+  },
+
+  /**
+   * 当小程序启动，或从后台进入前台显示，会触发 onShow
+   */
+  onShow: function (options) {
+    console.log('onShow===', options)
+    //1.判断小程序的进入场景
+    switch (options.scene) {
+      case 1001:
+        console.log()
+        break;
+      case 1005:
+        break;
+      default:
+    }
+    // 2.获取用户信息，并传递给服务器
+    wx.getUserInfo({ //有可能会过期
+        success(res){
+            console.log('getUserInfo==',res)
+        }
     })
-    //模拟出错
-    // setTimeout(() => {
-    //   const err = new Error()
-    //   throw err
-    // }, 3000);
   },
-  // 小程序界面显示出来之后会执行的函数 
-  onShow(){
-    console.log('onShow==')
+
+  /**
+   * 当小程序从前台进入后台，会触发 onHide
+   */
+  onHide: function () {
+
   },
-  // 界面被隐藏时执行
-  onHide(){
-    console.log('onHide==')
+
+  /**
+   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
+   */
+  onError: function (msg) {
+
   },
-  // 发生错误时执行
-  onError(){
-    console.log('onError==')
+  //全局数据,可进行共享
+  globalData:{
+     name:"coderYcj",
+     age:26
   }
 })

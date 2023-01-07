@@ -1,31 +1,11 @@
-<!--pages/home/home.wxml--> 
-<!-- 1.小程序的数据绑定  {{}} mustache语法-->
-<view>
-  hello {{name}}
-</view>
-<view>
-  我的年龄：{{age}}
-</view>
+ <text>hello</text>
+ <button size="mini">按钮</button>
 
-<!-- 2.列表展示 wx:for-->
-<!-- <view>
-  {{students[0].name}}
-</view> -->
-<view wx:for="{{students}}">
-  id:{{item.id}}
-  姓名：{{item.name}}
-  年龄：{{item.age}}
-</view>
-
-<!-- 3.事件监听改变data 
-bindtap绑定不需要mustache语法 -->
-<view>
-  当前计数：{{counter}}
-</view>
-<button size="mini" bindtap="handleBtnClick">+</button>
-<button size="mini" bindtap="handleSubtraction">-</button>
-
-<!-- 编程范式
-    1.命令式编程：原生操作dom
-    2.声明式编程：Vue/React/Angular
- -->
+ <button 
+ size="mini" 
+ open-type="getUserInfo" 
+ bindgetuserinfo="handleGetUserInfo"
+ >获取授权</button>
+<!-- 内置组件 -->
+ <open-data type="userNickName"></open-data>
+ <open-data type="userAvatarUrl"></open-data>
