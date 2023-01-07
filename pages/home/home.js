@@ -16,16 +16,28 @@ Page({
   // --------------------1.监听页面的生命周期--------------------
   // 页面被加载出来
   onLoad() {
+    const _this = this
     console.log('home--onload')
     wx.request({
       url: 'http://localhost:8888/userlist',
-      success: (res) => {
-        console.log('home res--', res)
-        const resData = res.data
-        this.setData({
-          list:resData
-        })
-      }
+      // 箭头函数的this一层一层向上查找
+      // success: (res) => {
+      //   console.log('home res--', res)
+      //   const resData = res.data
+      //   this.setData({
+      //     list:resData
+      //   })
+      // }
+      // 此处的this为undefined,解决方案：const _this = this
+      success:function (res)  {
+          console.log('home res--', res)
+          console.log('home this--', this)
+          console.log('home _this--', _this)
+          const resData = res.data
+          _this.setData({
+            list:resData
+          })
+        }
     })
   },
   // 页面初次渲染完成
