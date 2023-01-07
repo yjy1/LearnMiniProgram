@@ -1,0 +1,5 @@
+/* 全局样式 */
+.box2{
+  color: blue;
+  font-size: 50px;
+}

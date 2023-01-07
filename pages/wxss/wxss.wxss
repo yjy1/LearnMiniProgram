@@ -1,0 +1,8 @@
+/* pages/wxss/wxss.wxss */
+.box{
+  color: orange;
+  font-size: 40px;
+}
+.content{
+  background: blueviolet;
+}

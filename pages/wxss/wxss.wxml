@@ -1,0 +1,21 @@
+<!-- 1.设置样式的三种方式 -->
+<!-- 1.1行内，内联样式 -->
+ <view style="color: crimson;font-size: 30px;">
+   哈哈哈
+ </view>
+
+ <!-- 1.2页内样式 -->
+ <view class="box">
+   呵呵呵
+ </view>
+
+ <!-- 1.3全局样式 -->
+ <view class="box2">
+   嘿嘿嘿
+ </view>
+
+ <!-- 2.三种样式作用于同一个组件 -->
+ <!-- 行内样式>页面样式>全局样式 -->
+ <view style="background:crimson" class="content" >
+   嘻嘻嘻
+ </view>
