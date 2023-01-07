@@ -1,5 +1,6 @@
 /* 全局样式 */
-.box2{
+@import './style/btn.wxss';
+.box_2{
   color: blue;
   font-size: 50px;
 }

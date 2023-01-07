@@ -1,8 +1,29 @@
 /* pages/wxss/wxss.wxss */
+@import './style/box.wxss';
+@import './style/content.wxss';
+@import './style/weui-searchbar.wxss';
+
 .box{
   color: orange;
   font-size: 40px;
 }
 .content{
-  background: blueviolet;
+  background: blueviolet !important;
 }
+/* .box1{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.box2{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: purple;
+} */
+/* 以iphone6为准，1px=2rpx */
+/* .content1{
+  font-size: 32px;
+} 
+.content2{
+  font-size: 64rpx;
+} */
