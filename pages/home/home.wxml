@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+<text id="content" class="title">Hello World</text>
+<button id="" size="mini">按钮</button>
+<!-- 1.hidden属性 -->
+<view hidden="{{true}}">
+  哈哈哈
+</view>
+<view catchtap="">
+  哈哈哈
+</view>
