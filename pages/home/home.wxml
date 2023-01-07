@@ -7,5 +7,18 @@
  bindgetuserinfo="handleGetUserInfo"
  >获取授权</button>
 <!-- 内置组件 -->
- <open-data type="userNickName"></open-data>
- <open-data type="userAvatarUrl"></open-data>
+ <!-- <open-data type="userNickName"></open-data> -->
+ <!-- <open-data type="userAvatarUrl"></open-data> -->
+
+ <view bindtap="handleViewClick">
+   {{message}}
+ </view>
+
+ <view wx:for="{{list}}">
+   {{item.id}}
+   {{item.hometype}}
+   {{item.name}}
+   {{item.num}}
+   {{item.title}}
+   {{item.type}}
+ </view>
