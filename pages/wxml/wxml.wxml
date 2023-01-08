@@ -144,7 +144,7 @@
       2.特点：不能进行递归导入
      include引入：
       1.将公共的wxml组件抽取到一个文件中
-      2.特点：不能导入template/wxss，可以进行递归引入
+      2.特点：不能导入template/wxs，可以进行递归引入
       
 -->
 <!-- <include src="../../wxml/template"/> -->
@@ -158,3 +158,9 @@
 <template is="contentTpl" data="{{btnText:'按钮',viewText:'文本3'}}"/>
 
 <template is="abcTpl"/> 
+
+<!-- 错误写法 -->
+<!-- <view>{{25.666666666666.toFixed(2)}}</view> -->
+
+<!-- 不能直接调用Page/Component里的函数 -->
+<!-- <view>{{num2Fixed(25.666666666666)}}</view> -->

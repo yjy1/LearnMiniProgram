@@ -36,16 +36,20 @@ Page({
       isShow:!this.data.isShow
     })
   },
+  num2Fixed(value){
+    return value.toFixed(2)
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    setInterval(() => { //定时器，setTimeOut不起作用
-      console.log('setInterval')
-      this.setData({
-        time:new Date().toLocaleString()
-      })
-    }, 1000);
+    // setInterval(() => { //定时器，setTimeOut不起作用
+    //   console.log('setInterval')
+    //   this.setData({
+    //     time:new Date().toLocaleString()
+    //   })
+    // }, 1000);
   },
 
   /**
