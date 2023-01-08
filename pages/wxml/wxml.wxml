@@ -1,0 +1,28 @@
+ <!-- 1.wxml的格式 -->
+ <!-- 双标签 -->
+ <view>
+   
+ </view>
+ <!-- 单标签 -->
+ <image/>
+ <input/>
+
+ <!-- 2.Mustache语法 -->
+ <view>
+   {{message}}
+ </view>
+ <view>
+   {{firstName}}  {{lastName}}
+ </view>
+ <view>
+   {{age >= 18 ? '成年人' : '未成年人'}}
+   {{'i am string'}}
+ </view>
+ <view>{{time}}</view>
+<view>
+  =================
+</view>
+ <button bindtap="handleBtnClick" size="mini">切换颜色</button>
+ <view class="box {{isActive ? 'active' : ''}}">
+   哈哈哈
+ </view>
