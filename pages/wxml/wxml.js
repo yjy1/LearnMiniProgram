@@ -24,7 +24,7 @@ Page({
       [31,33,35,37,39],
       [41,43,45,47,49],
     ],
-    letters:['a','b','c','d']
+    letters:['a','b','c','d'],
   },
   handleBtnClick(){
     this.setData({

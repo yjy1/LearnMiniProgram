@@ -1,0 +1,5 @@
+<view>
+  <include src="./nav"/>
+  <view>标题</view>
+  -------------------
+</view>

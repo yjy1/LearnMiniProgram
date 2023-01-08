@@ -1,4 +1,6 @@
 <!--pages/home/home.wxml-->
+<include src="../../wxml/header"/>
+
 <text id="content" class="title">Hello World</text>
 <button id="" size="mini">按钮</button>
 <!-- 1.hidden属性 -->
@@ -8,3 +10,9 @@
 <view catchtap="">
   哈哈哈
 </view>
+
+<!-- 引入模板 -->
+<import src="../../wxml/template"/>
+<template is="contentTpl" data="{{btnText:'确定',viewText:'正在确定...'}}"/>
+
+<include src="../../wxml/footer"/>

@@ -120,6 +120,41 @@
   </block> -->
 
   <!-- 4.key:的作用 -->
-  <view class="container">
+  <!-- <view class="container">
     <view wx:for="{{letters}}" wx:key="index" >{{item}}</view>
-  </view>
+  </view> -->
+
+<view>---------------template---------------</view>
+<!-- 之前小程序不支持自定义组件，为了进行代码的复用：template -->
+<!-- <button>按钮/警告/点击</button>
+<view>你好，小程序/hello World</view> -->
+<!-- 定义模板 -->
+<!-- <template name="contentTpl">
+  <button size="mini">{{btnText}}</button>
+  <view>{{viewText}}</view>
+</template> -->
+
+<!-- 引入模板 -->
+<import src="../../wxml/template"/>
+<import src="../../wxml/abc"/>
+<!-- 结论：include不能导入模板 -->
+<!-- 关于wxml的导入有两种方式：
+     import导入：
+      1.主要导入template
+      2.特点：不能进行递归导入
+     include引入：
+      1.将公共的wxml组件抽取到一个文件中
+      2.特点：不能导入template/wxss，可以进行递归引入
+      
+-->
+<!-- <include src="../../wxml/template"/> -->
+
+<!-- 使用模板，is="名称"
+     为模板传入参数，data="{{key1:value1,key2:value2}}"
+     模板里的变量只能在使用模板的时改变
+-->
+<template is="contentTpl" data="{{btnText:'警告',viewText:'文本1'}}"/>
+<template is="contentTpl" data="{{btnText:'点击',viewText:'文本2'}}"/>
+<template is="contentTpl" data="{{btnText:'按钮',viewText:'文本3'}}"/>
+
+<template is="abcTpl"/> 
