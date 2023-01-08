@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    titles:['衣服','裤子','鞋子']
   },
   handleBtnClick(){
     console.log('按钮被点击了')
@@ -36,6 +36,13 @@ Page({
   },
   handleOuter(event){
     console.log('handleOuter-------',event)
+  },
+  handleTitleTap(event){
+    console.log('handleTitleTap-------',event)
+    const dataset = event.currentTarget.dataset
+    const title = dataset.item
+    const index = dataset.index
+    console.log('event.currentTarget title  index-------', title,index)
   },
   /**
    * 生命周期函数--监听页面加载
