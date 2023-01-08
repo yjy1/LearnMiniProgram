@@ -11,3 +11,13 @@
   bind:tap="handleTap"
   bindlongpress="handleLongPress"
  ></view>
+
+ <!-- 3.事件对象的分析 -->
+<button id="btn" size="mini" bindtap="handleEventClick" bindtouchend="handleEventEnd">事件对象</button>
+
+<view class="outer" id="outer" bindtap="handleOuter">
+  外层的view
+  <view class="inner" bindtap="handleInner" id="inner">
+    内层的view
+  </view>
+</view>
