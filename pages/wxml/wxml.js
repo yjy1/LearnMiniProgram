@@ -11,11 +11,20 @@ Page({
     age:13,
     // time:new Date().toLocaleString()
     time:"",
-    isActive:true
+    isActive:true,
+    isShow:true,
+    score:35,
+    isHidden:true,
+    isHidden2:true
   },
   handleBtnClick(){
     this.setData({
       isActive:!this.data.isActive
+    })
+  },
+  handleIsShow(){
+    this.setData({
+      isShow:!this.data.isShow
     })
   },
   /**
