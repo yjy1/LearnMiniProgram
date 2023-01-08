@@ -5,5 +5,9 @@
     "pages/wxss/wxss",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "usingComponents": {
+    "my-cpn":"./components/my-cpn",
+    "cpn1":"./components/cpn1/cpn1"
+  }
 }
