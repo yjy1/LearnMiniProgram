@@ -1,0 +1,9 @@
+function priceFormat(price, number){
+  console.log('priceFormat')
+  var number = number || 2;
+  return price.toFixed(number)
+}
+// 导出
+module.exports={
+  priceFormat:priceFormat
+}

@@ -30,3 +30,7 @@
 <view >{{info.foo}}</view>
 <view >{{info.name}}</view>
 <view >{{info.sum(10,20)}}</view>
+
+<!-- 3.wxs的应用 -->
+<wxs module="format" src="../../wxs/format.wxs"/>
+<view>{{format.priceFormat(price,3)}}</view>
