@@ -1,18 +1,13 @@
-<!--pages/home/home.wxml-->
-<include src="../../wxml/header"/>
+ <!-- 1.事件处理的回顾 -->
+ <button size="mini" bindtap="handleBtnClick">按钮</button>
+ <button size="mini" bind:tap="handleBtnClick">按钮</button>
+ <button size="mini" catch:tap="handleBtnClick">按钮</button>
 
-<text id="content" class="title">Hello World</text>
-<button id="" size="mini">按钮</button>
-<!-- 1.hidden属性 -->
-<view hidden="{{true}}">
-  哈哈哈
-</view>
-<view catchtap="">
-  哈哈哈
-</view>
-
-<!-- 引入模板 -->
-<import src="../../wxml/template"/>
-<template is="contentTpl" data="{{btnText:'确定',viewText:'正在确定...'}}"/>
-
-<include src="../../wxml/footer"/>
+ <!-- 2.常见的一些事件 -->
+ <view class="box" 
+  bindtouchstart="handleTouchStart"
+  bindtouchmove="handleTouchMove"
+  bindtouchend="handleTouchEnd"
+  bind:tap="handleTap"
+  bindlongpress="handleLongPress"
+ ></view>

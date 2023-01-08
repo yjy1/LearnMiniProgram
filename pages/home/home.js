@@ -7,7 +7,24 @@ Page({
   data: {
 
   },
-
+  handleBtnClick(){
+    console.log('按钮被点击了')
+  },
+  handleTouchStart(){
+    console.log('handleTouchStart')
+  },
+  handleTouchMove(){
+    console.log('handleTouchMove')
+  },
+  handleTouchEnd(){
+    console.log('handleTouchEnd')
+  },
+  handleTap(){
+    console.log('handleTap---------')
+  },
+  handleLongPress(){
+    console.log('handleLongPress')
+  },
   /**
    * 生命周期函数--监听页面加载
    */

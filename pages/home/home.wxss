@@ -3,4 +3,9 @@
   color: crimson;
   font-size: 30px;
 }
+.box{
+  width: 400rpx;
+  height: 400rpx;
+  background-color: orange;
+}
  
