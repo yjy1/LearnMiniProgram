@@ -67,3 +67,59 @@
   <view wx:if="{{isHidden2}}">
     我是hidden属性的内容 wx:if
   </view>
+
+  <view>
+    ---------------列表渲染---------------
+  </view>
+  <!-- 1.wx:for的回顾 -->
+  <!-- 1.1遍历数组/字符串/数组 -->
+  <!-- <view wx:for="{{[1,2,3]}}"> -->
+    <!-- 自动生成的变量：item,index -->
+    <!-- {{item}}--{{index}}
+  </view>
+  <view>
+    ----------------------
+  </view> -->
+  <!-- 遍历字符串 -->
+  <!-- <view wx:for="coderYcj">
+    {{item}}--{{index}}
+  </view>
+  <view>
+    ----------------------
+  </view> -->
+  <!-- 遍历数字，9次 -->
+  <!-- <view wx:for="{{9}}">
+    {{item}}--{{index}}
+  </view> -->
+
+  <!-- 控制一批组件 -->
+  <!-- <block wx:if="{{isShowBlock}}">
+    <button size="mini">按钮</button>
+    <view>呵呵呵</view>
+    <text>我是内容</text>
+  </block> -->
+  <!-- 最外层的view会创建组件,会消耗系统资源  -->
+  <!-- <view wx:for="{{3}}">
+    <button size="mini">按钮</button>
+    <view>呵呵呵</view>
+    <text>我是内容</text>
+  </view> -->
+  <!-- 最外层的block不会创建组件,不会消耗系统资源 
+       不会在页面做任何渲染，只接受控制属性
+  -->
+  <!-- <block wx:for="{{3}}">
+    <button size="mini">按钮</button>
+    <view>呵呵呵</view>
+    <text>我是内容</text>
+  </block> -->
+
+  <!-- 3.item、index起名字 -->
+  <!-- <view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="idx">{{movie}}-{{idx}}</view>
+  <block wx:for="{{nums}}" wx:for-item="innerNums">
+    <block wx:for="{{innerNums}}">{{item}} \n</block>
+  </block> -->
+
+  <!-- 4.key:的作用 -->
+  <view class="container">
+    <view wx:for="{{letters}}" wx:key="index" >{{item}}</view>
+  </view>

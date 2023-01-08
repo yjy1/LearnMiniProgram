@@ -15,7 +15,16 @@ Page({
     isShow:true,
     score:35,
     isHidden:true,
-    isHidden2:true
+    isHidden2:true,
+    isShowBlock:true,
+    movies:['星际穿越','盗梦空间','阿凡达','钢铁侠'],
+    nums:[
+      [1,3,5,7,9],
+      [21,23,25,27,29],
+      [31,33,35,37,39],
+      [41,43,45,47,49],
+    ],
+    letters:['a','b','c','d']
   },
   handleBtnClick(){
     this.setData({
