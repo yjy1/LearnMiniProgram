@@ -1,0 +1,12 @@
+/* components/my-style/my-style.wxss */
+.title{
+font-size: 60rpx;
+font-weight: 700;
+}
+.content{
+  font-size: 30rpx;
+}
+/*  Some selectors are not allowed in component wxss, including tag name selectors, ID selectors, and attribute selectors. */
+/* #box{
+ background: crimson;
+} */

@@ -1,3 +1,9 @@
+<text class="title">Hello World</text>
+<!-- 1.自定义组件的基本使用 -->
+<!-- <my-cpn></my-cpn>
 <my-cpn></my-cpn>
-<my-cpn></my-cpn>
-<my-cpn/>
+<my-cpn/> -->
+
+<view>-----------2.自定义组件的样式细节---------  </view>
+<!-- 2.自定义组件的样式细节 -->
+<my-style></my-style>
