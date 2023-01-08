@@ -44,6 +44,26 @@ Page({
     const index = dataset.index
     console.log('event.currentTarget title  index-------', title,index)
   },
+  // 事件冒泡和事件捕获
+  handleCaptureView1(event){
+    console.log('handleCaptureView1-------')
+  },
+  handleBindView1(event){
+    console.log('handleBindView1-------')
+  },
+  handleCaptureView2(event){
+    console.log('handleCaptureView2-------')
+  },
+  handleBindView2(event){
+    console.log('handleBindView2-------')
+  },
+  handleCaptureView3(event){
+    console.log('handleCaptureView3-------')
+  },
+  handleBindView3(event){
+    console.log('handleBindView3-------')
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

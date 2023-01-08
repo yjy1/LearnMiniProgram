@@ -32,3 +32,22 @@
   >{{item}}</view>
   </block>
 </view>
+
+<view>------------ 5.事件冒泡和事件捕获--------  </view>
+<!-- 5.事件冒泡和事件捕获 -->
+<!-- bind会一层层传递 -->
+<!-- catch会阻止事件的进一步传递 -->
+<view class="view1" 
+ capture-bind:tap="handleCaptureView1"
+ bindtap="handleBindView1"
+ >
+  <view class="view2" 
+  capture-bind:tap="handleCaptureView2" 
+  bindtap="handleBindView2"
+  >
+    <view class="view3"
+     capture-catch:tap="handleCaptureView3" 
+     bindtap="handleBindView3"
+     ></view>
+  </view>
+</view>
