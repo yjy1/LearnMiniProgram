@@ -1,0 +1,32 @@
+ <!-- 1.错误写法 -->
+<!-- <view>{{25.666666666666.toFixed(2)}}</view> -->
+
+<!-- 不能直接调用Page/Component里的函数 -->
+<!-- <view>{{num2Fixed(25.666666666666)}}</view> -->
+
+<!-- 2.wxs的定义方式 
+     不支持es6写法，只支持es5写法
+-->
+<!-- <wxs module="info">
+  // js 代码，
+  var foo = "Hello World"
+  var name = "coderYcj";
+
+  var sum = function (num1,num2) {
+    return num1 + num2
+  }
+  // common.js的模块化导出的写法 ,exports
+  module.exports = {
+    foo:foo,
+    name:name,
+    sum:sum
+  }
+</wxs> -->
+
+<!-- 2.2定义在单独的wxs文件中，再wxs的标签进行导入 
+     导入时需要为导入文件定义名称
+-->
+<wxs module="info" src="../../wxs/info.wxs"/>
+<view >{{info.foo}}</view>
+<view >{{info.name}}</view>
+<view >{{info.sum(10,20)}}</view>

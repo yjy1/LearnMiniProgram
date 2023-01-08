@@ -1,0 +1,13 @@
+// js 代码，
+var foo = "Hello World"
+var name = "coderYcj";
+
+var sum = function (num1,num2) {
+  return num1 + num2
+}
+// common.js的模块化导出的写法 ,exports
+module.exports = {
+  foo:foo,
+  name:name,
+  sum:sum
+}
