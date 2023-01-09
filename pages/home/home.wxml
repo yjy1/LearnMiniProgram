@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!-- 1.toast -->
+<button size="mini" bindtap="handleShowToast">显示弹窗</button>
+
+<!-- 2.modal -->
+<button size="mini" bindtap="handleShowModal">显示modal</button>
+
+<!-- 3.loading -->
+<button size="mini" bindtap="handleShowLoading">显示 loading</button>
+
+<!-- 4.actionSheet -->
+<button size="mini" bindtap="handleShowActionSheet">显示 actionSheet</button>
