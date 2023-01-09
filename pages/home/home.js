@@ -5,65 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    titles:['衣服','裤子','鞋子']
+    counter:0
   },
-  handleBtnClick(){
-    console.log('按钮被点击了')
-  },
-  handleTouchStart(){
-    console.log('handleTouchStart')
-  },
-  handleTouchMove(){
-    console.log('handleTouchMove')
-  },
-  handleTouchEnd(){
-    console.log('handleTouchEnd')
-  },
-  handleTap(){
-    console.log('handleTap---------')
-  },
-  handleLongPress(){
-    console.log('handleLongPress')
-  },
-  handleEventClick(event){
-    console.log('handleEventClick-------',event)
-  },
-  handleEventEnd(event){
-    console.log('handleEventEnd-------',event)
-  },
-  handleInner(event){
-    console.log('handleInner-------',event)
-  },
-  handleOuter(event){
-    console.log('handleOuter-------',event)
-  },
-  handleTitleTap(event){
-    console.log('handleTitleTap-------',event)
-    const dataset = event.currentTarget.dataset
-    const title = dataset.item
-    const index = dataset.index
-    console.log('event.currentTarget title  index-------', title,index)
-  },
-  // 事件冒泡和事件捕获
-  handleCaptureView1(event){
-    console.log('handleCaptureView1-------')
-  },
-  handleBindView1(event){
-    console.log('handleBindView1-------')
-  },
-  handleCaptureView2(event){
-    console.log('handleCaptureView2-------')
-  },
-  handleBindView2(event){
-    console.log('handleBindView2-------')
-  },
-  handleCaptureView3(event){
-    console.log('handleCaptureView3-------')
-  },
-  handleBindView3(event){
-    console.log('handleBindView3-------')
-  },
-
+  handleIncrement(event){
+    console.log('home handleIncrement',event.detail);
+    this.setData({
+      counter:this.data.counter+1
+    })
+  }, 
   /**
    * 生命周期函数--监听页面加载
    */
