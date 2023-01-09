@@ -1,18 +1,6 @@
- <!-- 1.navigator页面跳转 -->
- <navigator url="../detail/detail">跳到详情页</navigator>
-
-  <!-- 2.navigator open-type -->
+ 
+  <!-- 3.跳转过程中数据的传递 -->
   <navigator 
-  url="../detail/detail" 
-  open-type="redirect"
-  >跳到详情页(redirect)</navigator>
-
-  <navigator 
-  url="../about/about" 
-  open-type="switchTab"
-  >跳到关于(switchTab)</navigator>
-
-  <navigator 
-  url="../detail/detail" 
-  open-type="reLaunch"
-  >跳到详情页(reLaunch)</navigator>
+  url="../detail/detail?name=ycj&age=26&height=165" 
+  >跳到详情页 </navigator>
+  <view>{{title}}</view>
