@@ -24,8 +24,10 @@
      1.给每个插槽起名字，name属性
      2.必须在Component对象中添加一个选项：options
  -->
-<my-mslot>
-<button size="mini" slot="slot1">我是插入的按钮</button>
- <slider slot="slot2"></slider>
- <text slot="slot3">呵呵呵哈</text>
-</my-mslot>
+ <block wx:if="{{isShow}}">
+  <my-mslot>
+    <button size="mini" slot="slot1">我是插入的按钮</button>
+    <slider slot="slot2"></slider>
+    <text slot="slot3">呵呵呵哈</text>
+  </my-mslot>
+ </block>

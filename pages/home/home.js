@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-     
+    isShow:true
   },
   handleBtnClick(){
     // 获取组件对象
