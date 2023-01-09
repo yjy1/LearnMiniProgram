@@ -1,66 +1,41 @@
 // pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad(options) {
+    // 发送网络请求
+    // 1.发送最简单的get请求get
+    // wx.request({
+    //   url: 'http://localhost:8888/userlist',
+    //   data:{ //携带参数
+    //     type:'住宅v'
+    //   },
+    //   success:(res)=>{
+    //     console.log(res)
+    //   }
+    // })
 
+    // 2.post请求
+    wx.request({
+      url: 'http://localhost:8888/userlist',
+      method:'POST',
+      data:{
+        "id": 10087,
+        "title": "海天家园2023",
+        "type": "住宅2023",
+        "num": "1-1-2",
+        "hometype": "三室两厅",
+        "name": "关羽"
+      },
+      success:(res)=>{
+        console.log('success-----------',res)
+      },
+      // 失败的情况
+      fail:(err)=>{
+        console.log('fail-----------',err)
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+ 
 })
