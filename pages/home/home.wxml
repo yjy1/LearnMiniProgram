@@ -1,6 +1,2 @@
- 
-  <!-- 3.跳转过程中数据的传递 -->
-  <navigator 
-  url="../detail/detail?name=ycj&age=26&height=165" 
-  >跳到详情页 </navigator>
-  <view>{{title}}</view>
+  <!-- 4.通过代码进行页面跳转 -->
+  <button size="mini" bindtap="handleNav">跳到详情页</button>

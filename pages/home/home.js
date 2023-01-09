@@ -7,9 +7,10 @@ Page({
   data: {
     title:'哈哈哈'
   },
-  handleChangeTitle(){
-    this.setData({
-      title:'呵呵呵哈'
+  handleNav(){
+    console.log('aaaaaaa')
+    wx.navigateTo({
+      url: '/pages/detail/detail?title=你好啊',
     })
-  }
+  }, 
 })
