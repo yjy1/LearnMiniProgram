@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-     "w-web-control":"../../components/w-tab-control/w-web-control"
+     "my-sel":"../../components/my-sel/my-sel"
   }
 }
