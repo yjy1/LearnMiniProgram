@@ -1,19 +1,5 @@
-<text class="title">Hello World</text>
-<!-- 1.自定义组件的基本使用 -->
-<!-- <my-cpn></my-cpn>
-<my-cpn></my-cpn>
-<my-cpn/> -->
-
-<!-- 2.自定义组件的样式细节 -->
-<!-- <my-style></my-style> -->
-
-<!-- 3.给自定义组件传递数据/樣式 -->
-<!-- <my-prop title="哈哈哈"></my-prop>
-<my-prop title="呵呵呵"></my-prop>
-<my-prop title="嘿嘿嘿"></my-prop>
-<my-prop  ></my-prop>
-<my-prop  titleClass="green"></my-prop> -->
-
-<!-- 4.组件内部发出事件 -->
-<view>当前计数：{{counter}}</view>
-<my-event bind:increment="handleIncrement"/>
+ <!-- 5.w-web-controll的练习 -->
+ <w-web-control
+  titles="{{titles}}"
+  bind:tabItemClick = "handleTabItemClick"
+  ></w-web-control>

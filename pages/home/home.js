@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    titles:['电脑','手机','相机','游戏机'],
     counter:0
+  },
+  handleTabItemClick(event){
+    console.log('aa',event.detail);
+    const index = event.detail.index
+    const itemTitle = event.detail.itemTitle
+    console.log('此类别被点击---',itemTitle)
   },
   handleIncrement(event){
     console.log('home handleIncrement',event.detail);
